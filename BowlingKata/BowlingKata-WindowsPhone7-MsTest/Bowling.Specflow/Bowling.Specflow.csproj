@@ -62,7 +62,7 @@
     <Reference Include="System.Net" />
     <Reference Include="System.Xml" />
     <Reference Include="TechTalk.SpecFlow.WindowsPhone7">
-      <HintPath>$(ProgramFiles)\TechTalk\SpecFlow\TechTalk.SpecFlow.WindowsPhone7.dll</HintPath>
+      <HintPath>..\lib\TechTalk.SpecFlow.WindowsPhone7.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
