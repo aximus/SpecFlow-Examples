@@ -32,19 +32,19 @@ namespace Bowling.Specflow.Steps
             }
         }
 
-        [Then(@"my total score should be (\d+)")]
+        [Then(@"my total score should be (.*)")]
         public void ThenMyTotalScoreShouldBe(int score)
         {
             Assert.AreEqual(score, _game.Score);
         }
 
-        [When(@"I roll (\d+)")]
+        [When(@"I roll (.*)")]
         public void WhenIRoll(int pins)
         {
             _game.Roll(pins);
         }
 
-        [When(@"I roll (\d+) and (\d+)")]
+        [When(@"I roll (.*) and (.*)")]
         public void WhenIRoll(int pins1, int pins2)
         {
             _game.Roll(pins1);
@@ -61,7 +61,7 @@ namespace Bowling.Specflow.Steps
 //            }
 //        }
 
-        [When(@"I roll (\d+) times (\d+) and (\d+)")]
+        [When(@"I roll (\d+) times (.*) and (.*)")]
         public void WhenIRollSeveralTimes2(int rollCount, int pins1, int pins2)
         {
             for (int i = 0; i < rollCount; i++)
